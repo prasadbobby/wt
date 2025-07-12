@@ -20,8 +20,8 @@ CORS(app)
 
 # Configuration
 class Config:
-    TWILIO_ACCOUNT_SID = os.environ.get('TWILIO_ACCOUNT_SID')
-    TWILIO_AUTH_TOKEN = os.environ.get('TWILIO_AUTH_TOKEN')
+    TWILIO_ACCOUNT_SID = os.environ.get('TWILIO_ACCOUNT_SID', 'ACf5eb827e95c3c8311baed35c63d17a31')
+    TWILIO_AUTH_TOKEN = os.environ.get('TWILIO_AUTH_TOKEN', 'c61418af752a1fd1b2acb5b5c8e5b7d3')
     WHATSAPP_FROM_NUMBER = os.environ.get('WHATSAPP_FROM_NUMBER', 'whatsapp:+17623566543')
     MONGO_URI = os.environ.get('MONGO_URI', 'mongodb+srv://bobby:bobby@cluster0.nvavp.mongodb.net/villagestay')
     GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
